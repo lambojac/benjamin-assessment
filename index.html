@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #007BFF;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #0056b3;
+            padding: 10px 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .profile {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .profile img {
+            border-radius: 50%;
+            width: 150px;
+            height: 30vh;
+            object-fit: cover;
+            border: 4px solid #007BFF;
+            background-color:gray;
+            margin-bottom: 20px;
+        }
+
+        .about {
+            text-align: center;
+            font-size: larger;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-style: normal;
+            height: 30vh;
+
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            justify-content: center;
+            
+        }
+
+        .skills img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        h1, h2 {
+            color: #007BFF;
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            justify-content: center;
+        }
+
+        .gallery img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #007BFF;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Portfolio</h1>
+    </header>
+
+    <nav>
+        <a href="#profile">Profile</a>
+        <a href="#about">About Me</a>
+        <a href="#gallery">Gallery</a>
+    </nav>
+
+    <div class="container">
+        <section id="profile" class="profile">
+            <img src="img/ben1.jpeg" alt="Profile Picture">
+            <h2>Onoh Benjamin Ndubuisi</h2>
+            <p>Frontend Developer|JavaScript|React </p>
+        </section>
+        <hr>
+
+        <section id="about" class="about">
+            <h2>About Me</h2>
+            <p>"I am a passionate frontend developer with a strong focus on creating responsive, user-friendly, and visually appealing web applications. Proficient in modern frameworks like React and Vue, I specialize in translating designs into pixel-perfect interfaces while ensuring optimal performance. With a keen eye for detail and a dedication to enhancing user experience, I thrive on building accessible and engaging digital solutions."</p>
+        </section>
+
+        <section id="skills" class="skills">
+            <div class="skill-gallery">
+                <h2>My Skill Set</h2>
+                <img src="img/HTML.jpg" alt="HTML 5">
+                <img src="img/CSS.jpg" alt="CSS">
+                <img src="img/Wordpress.png" alt="Wordpress">
+                <img src="img/DESIGN.jpg" alt="UI/UX">
+                <br>
+                <hr>
+                <h1>HTML and CSS</h1>
+                <br>
+                    <p>I have a strong foundation in HTML and CSS, using them to create clean, 
+                    semantic, and accessible web pages. I am proficient in crafting responsive designs, 
+                    ensuring that websites look and perform well across different devices and screen sizes.
+                     I have experience with modern CSS methodologies such as Flexbox, Grid, and frameworks
+                      like Bootstrap, enabling me to build visually appealing layouts efficiently. 
+                    I also focus on maintaining clean, reusable, and scalable stylesheets.
+                </p>
+                    <br>
+                    <h1>JavaScript</h1>
+                    <br>
+                    <p>With a solid understanding of JavaScript, I have worked on creating dynamic and 
+                        interactive web applications. I am experienced with ES6+ features, enabling me 
+                        to write modern, efficient, and readable code. From implementing DOM manipulation 
+                        and event handling to integrating APIs for dynamic content, I ensure functionality 
+                        aligns with user needs. Additionally, you have experience using libraries or frameworks
+                         such as jQuery and are exploring or working with more advanced frameworks like React or Next.js.
+                        </p>
+                        <br>
+                        <h1>WordPress</h1>
+                        <br>
+                        <p>I have hands-on experience building and customizing websites using WordPress, including working
+                             with pre-designed themes and creating custom themes to meet specific client requirements. My expertise
+                              includes configuring plugins, managing content, optimizing website performance, and ensuring SEO best practices.
+                               I am adept at leveraging WordPress’s flexibility to create websites tailored to various industries, ensuring 
+                               ease of use for non-technical users.
+                            </p>
+                            <br>
+                            <h1>UI/UX Design</h1>
+                            <br>
+                            <p>I have a keen eye for design and an understanding of user-centric design principles. By focusing on creating
+                                 intuitive and aesthetically pleasing user interfaces, I ensure that users have a seamless experience while
+                                  interacting with websites or applications. I have experience with wireframing and prototyping tools (e.g., Figma, Adobe XD)
+                                   and incorporate feedback loops to refine designs iteratively. I balance creativity with functionality, ensuring 
+                                   designs are both visually appealing and accessible.
+                                </p>
+
+            </div>
+
+        </section>
+
+        <section id="gallery" class="gallery">
+            <h2>Friends Gallery</h2>
+            <div class="gallery">
+                
+                <img src="img/ben2.jpeg" alt="Friend 1">
+                <img src="img/ben3.jpeg" alt="Friend 2">
+                <img src="img/ben4.jpeg" alt="Friend 3">
+                <img src="img/ben5.jpeg" alt="Friend 4">
+                <img src="img/ben1.jpeg" alt="Friend 5">
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Benjamin. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('nav a').forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href').substring(1);
+                const targetSection = document.getElementById(targetId);
+                window.scrollTo({
+                    top: targetSection.offsetTop - 20,
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Highlight navigation on scroll
+        window.addEventListener('scroll', () => {
+            const sections = document.querySelectorAll('section');
+            const navLinks = document.querySelectorAll('nav a');
+
+            let currentSection = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                if (scrollY >= sectionTop - 50) {
+                    currentSection = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href').substring(1) === currentSection) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
